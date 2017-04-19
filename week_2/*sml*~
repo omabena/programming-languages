@@ -1,0 +1,632 @@
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "h1test.sml";
+[opening h1test.sml]
+[use failed: Io: openIn failed on "h1test.sml", No such file or directory]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test9 = true : boolval test9_1 = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = false : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test9 = true : bool
+val test9_1 = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test9 = true : bool
+val test9_1 = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test9 = true : bool
+val test9_1 = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test8_1 = false : bool
+val test8_2 = false : bool
+val test8_3 = false : bool
+val test8_4 = false : bool
+val test9 = true : bool
+val test9_1 = true : bool
+val it = () : unit
+- number_before_reaching_sum (5, [3,2,2]) ;
+val it = 2 : int
+- number_before_reaching_sum (4, [1,4,1,1]);
+val it = 2 : int
+- number_before_reaching_sum (6, [4,1,1,1]);
+val it = 3 : int
+- number_before_reaching_sum (10, [1,2,3,4,5]);
+val it = 4 : int
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = false : bool
+val test8_1 = false : bool
+val test8_2 = false : bool
+val test8_3 = false : bool
+val test8_4 = false : bool
+val test9 = false : bool
+val test9_1 = false : bool
+val it = () : unit
+- number_before_reaching_sum (10, [1,2,3,4,5]);
+val it = 4 : int
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = false : bool
+val test8_1 = true : bool
+val test8_2 = false : bool
+val test8_3 = true : bool
+val test8_4 = true : bool
+val test9 = false : bool
+val test9_1 = false : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test8_1 = true : bool
+val test8_2 = false : bool
+val test8_3 = true : bool
+val test8_4 = true : bool
+val test9 = true : bool
+val test9_1 = true : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = false : bool
+val test8_1 = true : bool
+val test8_2 = true : bool
+val test8_3 = true : bool
+val test8_4 = true : bool
+val test9 = false : bool
+val test9_1 = false : bool
+val it = () : unit
+- 
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = false : bool
+val test8_1 = true : bool
+val test8_2 = true : bool
+val test8_3 = true : bool
+val test8_4 = true : bool
+val test9 = false : bool
+val test9_1 = false : bool
+val it = () : unit
+-
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test8_1 = true : bool
+val test8_2 = true : bool
+val test8_3 = true : bool
+val test8_4 = true : bool
+val test9 = false : bool
+val test9_1 = false : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test8_1 = true : bool
+val test8_2 = true : bool
+val test8_3 = true : bool
+val test8_4 = true : bool
+val test9 = false : bool
+val test9_1 = false : bool
+val it = () : unit
+- 
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test8_1 = true : bool
+val test8_2 = false : bool
+val test8_3 = true : bool
+val test8_4 = true : bool
+val test9 = true : bool
+val test9_1 = true : bool
+val it = () : unit
+- 
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = true : bool
+val test8_1 = true : bool
+val test8_2 = true : bool
+val test8_3 = true : bool
+val test8_4 = true : bool
+val test9 = false : bool
+val test9_1 = false : bool
+val it = () : unit
+- 
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Wed Mar 29 08:14:16 2017]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening hw1.sml]
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : (int * int * int) list * int -> int
+val number_in_months = fn : (int * int * int) list * int list -> int
+val dates_in_month = fn
+  : (int * int * int) list * int -> (int * int * int) list
+val dates_in_months = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val it = () : unit
+val test1 = true : bool
+val test1_1 = true : bool
+val test1_2 = true : bool
+val test1_3 = true : bool
+val test1_4 = true : bool
+val test1_5 = true : bool
+val test1_6 = true : bool
+val test2 = true : bool
+val test3 = true : bool
+val test4 = true : bool
+val test5 = true : bool
+val test6 = true : bool
+val test7 = true : bool
+val test8 = false : bool
+val test8_1 = false : bool
+val test8_2 = true : bool
+val test8_3 = false : bool
+val test8_4 = false : bool
+val test9 = false : bool
+val test9_1 = false : bool
+val it = () : unit
+- 
