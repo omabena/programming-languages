@@ -1,7 +1,0 @@
-fun nodecreasing xs =
-  case xs of
-      [] => true
-    | x::[] => true
-    | head::(neck::rest) => head <= neck andalso nodecreasing (neck::rest)
-
-							      

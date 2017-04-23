@@ -1,14 +1,8 @@
-(* Dan Grossman, Coursera PL, HW2 Provided Code *)
-
-(* if you use this function to compare two strings (returns true if the same
-   string), then you avoid several of the functions in problem 1 having
-   polymorphic types that may be confusing *)
+(* Helper function provided by DAN*)
 fun same_string(s1 : string, s2 : string) =
     s1 = s2
 
-
-(*val test1 = all_except_option ("string", ["string"]) = SOME []*)
-(* put your solutions for problem 1 here *)
+(* 1 (a) *)
 fun all_except_option(s: string, lst: string list) =
   let fun aux lst =
 	case lst of
@@ -19,6 +13,7 @@ fun all_except_option(s: string, lst: string list) =
       if aux(lst) = lst then NONE else SOME except_list
   end
       
+(* 1 (b) *)
 fun get_substitutions1 (list: string list list, s: string) =
   case list of
       [] => []
@@ -28,6 +23,7 @@ fun get_substitutions1 (list: string list list, s: string) =
 		      | SOME l => l @ get_substitutions1(xs',s)
 		end
 
+(* 1 (c) *)
 fun get_substitutions2(lst: string list list, s: string) =
   let fun aux(lst, acc) =
 	case lst of
@@ -42,6 +38,7 @@ fun get_substitutions2(lst: string list list, s: string) =
   end
 
 
+(* 1 (d) *)
 fun similar_names(lst: string list list, full_name: {first:string,middle:string,last:string}) =
   let
       fun first {first:string,middle:string,last:string} = first
@@ -58,9 +55,9 @@ fun similar_names(lst: string list list, full_name: {first:string,middle:string,
       create_records(get_substitutions2(lst,first full_name),[])
   end
 
-      
-(* You may assume that Num is always used with values 2, 3, ..., 10
-   though it will not really come up *)
+
+
+(* Data types provided by Dan *)
 datatype suit = Clubs | Diamonds | Hearts | Spades
 datatype rank = Jack | Queen | King | Ace | Num of int 
 type card = suit * rank
@@ -70,7 +67,7 @@ datatype move = Discard of card | Draw
 
 exception IllegalMove
 
-(* put your solutions for problem 2 here *)
+(* 2 (a) *)
 fun card_color card =
   case card of
       (Clubs,_) => Black
@@ -78,17 +75,20 @@ fun card_color card =
     | (Diamonds,_) => Red
     | (Heats,_) => Red
 
+(* 2 (b) *)
 fun card_value card =
   case card of
       (_, Num i) => i
     | (_, Ace) => 11
     | (_, _) => 10
 
+(* 2 (c) *)
 fun remove_card (cards, card, ex) =
   case cards of
       [] => raise ex
     | x::xs' => if x = card then xs' else x::remove_card(xs', card, ex)
 
+(* 2 (d) *)
 fun all_same_color cards =
   case cards of
       [] => true
@@ -96,6 +96,7 @@ fun all_same_color cards =
     | x::y::tl => if card_color(x) = card_color(y) then all_same_color(y::tl) else false
 
 
+(* 2 (e) *)
 fun sum_cards cards =
   let fun aux(cards, acc) =
 	case cards of
@@ -105,6 +106,7 @@ fun sum_cards cards =
       aux(cards, 0)
   end
       
+(* 2 (f) *)
 fun score (cards, goal) =
   let
       val sum = sum_cards(cards)
@@ -119,6 +121,7 @@ fun score (cards, goal) =
 	  else (goal - sum)
   end
       
+(* 2 (g) *)
 fun officiate (cards, moves, goal) =
   let
       fun state (cards, held_cards, moves) =

@@ -1,3 +1,4 @@
+(*1*)
 fun is_older(date1 : int * int * int, date2 : int * int * int) =
   if #1 date1 = #1 date2 andalso #2 date1 = #2 date2 andalso #3 date1 = #3 date2 then false
   else if #1 date1 < #1 date2 then true
@@ -8,6 +9,7 @@ fun is_older(date1 : int * int * int, date2 : int * int * int) =
   else false
 
 	       		      
+(*2*)
 fun number_in_month (dates : (int*int*int) list, month : int) =
   let
       fun count(dates: (int*int*int) list, number) =
@@ -22,6 +24,7 @@ fun number_in_month (dates : (int*int*int) list, month : int) =
       count(dates, 0)
   end
 
+(*3*)
 fun number_in_months(dates : (int*int*int) list, months : int list) =
   let
       fun count(months, number) =
@@ -32,6 +35,7 @@ fun number_in_months(dates : (int*int*int) list, months : int list) =
       count(months, 0)
   end
 
+(*4*)
 fun dates_in_month(dates : (int*int*int) list, month : int) =
   let
       fun appendDates(dates : (int*int*int) list, monthDates : (int*int*int) list) =
@@ -46,6 +50,7 @@ fun dates_in_month(dates : (int*int*int) list, month : int) =
   end
       
 
+(*5*)
 fun dates_in_months(dates : (int*int*int) list, months : int list) =
   let
       fun appendDates(months : int list, monthDates : (int*int*int) list) =
@@ -56,6 +61,7 @@ fun dates_in_months(dates : (int*int*int) list, months : int list) =
       appendDates(months, [])
   end
 
+(*6*)
 fun get_nth(phrase : string list, nth : int) =
   let
       fun transverse_index(phrase: string list, index : int) =
@@ -66,6 +72,7 @@ fun get_nth(phrase : string list, nth : int) =
       transverse_index(phrase, 1)
   end
 
+(*7*)
 fun date_to_string(year : int, month : int, day : int) =
   let
       val months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -75,19 +82,23 @@ fun date_to_string(year : int, month : int, day : int) =
       transform_date()
   end
 
+(*8*)
 fun number_before_reaching_sum (sum : int, sumList : int list) =
   if null sumList then 1
   else if hd sumList >= sum then 0
   else 1 + number_before_reaching_sum (sum - hd sumList, tl sumList) 
 	
+(*9*)
 fun what_month(dayNumber : int) =
       1 + number_before_reaching_sum(dayNumber,  [31, 28, 31, 30,  31, 30, 31, 31, 30, 31, 30, 31])
 
 				    
+(*10*)
 fun month_range(day1 : int, day2 : int) =
   if day1 > day2 then []
   else what_month day1 :: month_range(day1 + 1, day2)
 				 
+(*11*)
 fun oldest(dateList: (int*int*int) list) =
   if null dateList
   then NONE
