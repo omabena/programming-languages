@@ -17,22 +17,18 @@ fun all_except_option(s: string, lst: string list) =
 fun get_substitutions1 (list: string list list, s: string) =
   case list of
       [] => []
-    | x::xs' => let val filteredList = all_except_option(s, x) in
-		    case filteredList of
+    | x::xs' => case all_except_option(s, x) of
 			NONE => get_substitutions1(xs',s)
 		      | SOME l => l @ get_substitutions1(xs',s)
-		end
 
 (* 1 (c) *)
 fun get_substitutions2(lst: string list list, s: string) =
   let fun aux(lst, acc) =
 	case lst of
 	    [] => acc
-	  | x::xs'  => let val filteredList = all_except_option(s, x) in
-			   case filteredList of
+	  | x::xs'  =>  case all_except_option(s, x) of
 			       NONE => aux(xs', acc)
 			     | SOME i => aux(xs', acc @ i)
-		       end
   in
       aux(lst, [])
   end
@@ -72,8 +68,7 @@ fun card_color card =
   case card of
       (Clubs,_) => Black
     | (Spades,_) => Black
-    | (Diamonds,_) => Red
-    | (Heats,_) => Red
+    | (_, _) => Red
 
 (* 2 (b) *)
 fun card_value card =
@@ -125,13 +120,13 @@ fun score (cards, goal) =
 fun officiate (cards, moves, goal) =
   let
       fun state (cards, held_cards, moves) =
-	case (cards, held_cards, moves) of
-	    (_, _, []) => score(held_cards, goal)
-	 |  ([], _, Draw::tlMoves) => score(held_cards, goal)
-	 | (hdCard::tlCards, _, Draw::tlMoves) => if sum_cards(hdCard::held_cards) > goal
+	case (cards, moves) of
+	    (_, []) => score(held_cards, goal)
+	 |  ([], Draw::tlMoves) => score(held_cards, goal)
+	 | (hdCard::tlCards, Draw::tlMoves) => if sum_cards(hdCard::held_cards) > goal
 						  then score(hdCard::held_cards, goal)
 						  else state(tlCards, hdCard::held_cards, tlMoves)
-	 | (_, _, (Discard c)::tlMoves)  => state(cards, remove_card(held_cards, c, IllegalMove), tlMoves) 
+	 | (_, (Discard c)::tlMoves)  => state(cards, remove_card(held_cards, c, IllegalMove), tlMoves) 
   in
       state(cards, [], moves)
   end
