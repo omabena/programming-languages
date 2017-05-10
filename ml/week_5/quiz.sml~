@@ -1,0 +1,3 @@
+fun test xs =
+  case xs of
+      x::y => print("works");

@@ -1,0 +1,3 @@
+check_pat: Called check_pat on input: ConstructorP ("hi",TupleP[Variable "x",ConstructorP ("yo",TupleP[Variable "x",UnitP])]), should have gotten: false but your function returned otherwise. [incorrect answer]
+prob13 tests failed to run (most likely caused by an incorrect function signature in the submission)
+prob2to4 tests failed to run (most likely caused by an incorrect function signature in the submission)
