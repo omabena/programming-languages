@@ -16,7 +16,7 @@
 ; 3.
 (define (list-nth-mod xs n)
   (cond [(< n 0) error "list-nth-mod: negative number"]
-        [(null? xs) error "list-nth-mod: emtpy list"]
+        [(null? xs) error "list-nth-mod: empty list"]
         [#t (let
                 ([ith (remainder n (length xs))])
               (car (list-tail xs ith)))]))
@@ -54,15 +54,49 @@
                 (cons (cons 0 (car (s))) (lambda() (f (cdr (s))))))])
     (lambda() (f stream))))
 
-; 8. stream-for-n-steps
+; 8.
 (define (cycle-lists xs ys)
-  (letrec ([f (lambda (n)  (lambda() (f (+ n 1))))]
-           [stream (lambda(xs)
-                     (cons (cons (car xs) (car ys))
-                           (lambda () (stream (cdr xs)))))])
-    (lambda() (stream xs))))
+  (letrec ([stream (lambda(cur_xs cur_ys)
+                     (cons (cons (car cur_xs) (car cur_ys))
+                           (lambda () (stream (cond [(null? (cdr cur_xs)) xs]
+                                                    [#t (cdr cur_xs)])
+                                              (cond [(null? (cdr cur_ys)) ys]
+                                                    [#t (cdr cur_ys)])))))])
+    (lambda() (stream xs ys))))
   
   
+; 9.
+(define (vector-assoc v vec)
+  (letrec ([l (vector-length vec)]
+           [helper (lambda(cur) (cond [(> (+ 1 cur) l) #f]
+                                      [(pair? (vector-ref vec cur))
+                                       (let ([pr (vector-ref vec cur)])
+                                         (cond [(equal? v (car pr)) pr]
+                                               [#t (helper (+ 1 cur))]))]
+                                      [#t (helper (+ 1 cur))]))])
+    (helper 0)))
+
+; 10.
+
+(define (cached-assoc xs n)
+  (letrec ([cache (make-vector 20)]
+           [cache_pos 1]
+           [f (lambda(x)
+                (if (vector-assoc n cache)
+                    (begin
+                      (vector-assoc n cache))
+                    (begin
+                      (vector-set! cache cache_pos n)
+                      (set! cache_pos (+ 1 cache_pos))
+                      (assoc n xs))))])
+    f))
+              
+              
+              
+              
+        
+    
   
 
   
+                  
