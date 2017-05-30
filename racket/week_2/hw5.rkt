@@ -32,8 +32,6 @@
         [#t null]))
  
 
-;; CHANGE (put your solutions here)
-
 ;; Problem 2
 
 ;; lookup a variable in an environment
@@ -57,8 +55,27 @@
                     (int? v2))
                (int (+ (int-num v1) 
                        (int-num v2)))
-               (error "MUPL addition applied to non-number")))]
-        ;; CHANGE add more cases here
+               (error (format "MUPL addition applied to non-number: ~v" v2))))]
+        [(int? e) e]
+        [(ifgreater? e)
+         (let ([v1 (eval-under-env (ifgreater-e1 e) env)]
+               [v2 (eval-under-env (ifgreater-e2 e) env)])
+           (if (and (int? v1) (int? v2))
+               (if (> (int-num v1) (int-num v2))
+                   (ifgreater-e3 e)
+                   (ifgreater-e4 e))
+               (error "compare has to be int")))]
+        [(mlet? e)
+         (let ([envmlet (list (cons (mlet-var e) (eval-under-env (mlet-e e) env)))])
+           (eval-under-env (mlet-body e) envmlet))]
+        [(call? e)
+         e]
+        [(fun? e)
+         e]
+        [(closure? e)
+         e]
+         
+         
         [#t (error (format "bad MUPL expression: ~v" e))]))
 
 ;; Do NOT change

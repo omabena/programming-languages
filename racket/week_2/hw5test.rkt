@@ -5,7 +5,7 @@
 
 ;; Be sure to put your homework file in the same folder as this test file.
 ;; Uncomment the line below and, if necessary, change the filename
-;;(require "hw5")
+(require "hw5.rkt")
 
 (require rackunit)
 
@@ -21,13 +21,13 @@
 
    ;; tests if ifgreater returns (int 2)
    (check-equal? (eval-exp (ifgreater (int 3) (int 4) (int 3) (int 2))) (int 2) "ifgreater test")
-   
+  
    ;; mlet test
    (check-equal? (eval-exp (mlet "x" (int 1) (add (int 5) (var "x")))) (int 6) "mlet test")
-   
+ 
    ;; call test
    (check-equal? (eval-exp (call (closure '() (fun #f "x" (add (var "x") (int 7)))) (int 1))) (int 8) "call test")
-   
+#|   
    ;;snd test
    (check-equal? (eval-exp (snd (apair (int 1) (int 2)))) (int 2) "snd test")
    
@@ -52,8 +52,10 @@
    (eval-exp (call (call mupl-mapAddN (int 7))
                    (racketlist->mupllist 
                     (list (int 3) (int 4) (int 9)))))) (list (int 10) (int 11) (int 16)) "combined test")
-   
+
+|#
    ))
+
 
 (require rackunit/text-ui)
 ;; runs the test
