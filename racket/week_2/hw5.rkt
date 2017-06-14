@@ -41,6 +41,8 @@
         [(equal? (car (car env)) str) (cdr (car env))]
         [#t (envlookup (cdr env) str)]))
 
+
+
 ;; Do NOT change the two cases given to you.  
 ;; DO add more cases for other kinds of MUPL expressions.
 ;; We will test eval-under-env by calling it directly even though
@@ -69,14 +71,39 @@
          (let ([envmlet (list (cons (mlet-var e) (eval-under-env (mlet-e e) env)))])
            (eval-under-env (mlet-body e) envmlet))]
         [(call? e)
-         e]
-        [(fun? e)
-         e]
-        [(closure? e)
-         e]
-         
-         
-        [#t (error (format "bad MUPL expression: ~v" e))]))
+         (let ([v1 (eval-under-env (call-funexp e) env)]
+               [v2 (eval-under-env (call-actual e) env)])
+           (if (closure? v1)
+               (letrec ([cf (closure-fun v1)]
+                      [cenv (closure-env v1)]
+                      [funname (cons (fun-nameopt cf) v1)]
+                      [funvar (cons (fun-formal cf) v2)]) 
+                 (eval-under-env (fun-body cf)
+                                 (if (eq? (car funname) #f)
+                                     (cons funvar cenv)
+                                     (cons funvar (cons funname cenv)))))
+               (error "should return a closure")))]
+        [(fun? e) (closure env e)]
+        [(closure? e) e]
+        [(fst? e)
+         (let ([apair-e (eval-under-env (fst-e e) env)])
+           (if (apair? apair-e)
+               (apair-e1 apair-e)
+               (error "this is not a vailid apair")))]
+        [(snd? e)
+         (let ([apair-e (eval-under-env (snd-e e) e)])
+           (if (apair? apair-e)
+               (apair-e2 apair-e)
+               (error "this is not a vailid apair")))]
+        [(apair? e)
+         (let ([first (eval-under-env (apair-e1 e) env)]
+               [second (eval-under-env (apair-e2 e) env)])
+           (apair first second))]
+        [(aunit? e) e]
+        [(isaunit? e)
+         (let ([ans (eval-under-env (isaunit-e e) env)])
+           (if (aunit? ans) (int 1) (int 0)))]
+         [#t (error (format "bad MUPL expression: ~v" e))]))
 
 ;; Do NOT change
 (define (eval-exp e)
@@ -84,7 +111,8 @@
         
 ;; Problem 3
 
-(define (ifaunit e1 e2 e3) "CHANGE")
+(define (ifaunit e1 e2 e3)
+  (ifgreater (isaunit e1) (int 0) e2 e3)) 
 
 (define (mlet* lstlst e2) "CHANGE")
 
