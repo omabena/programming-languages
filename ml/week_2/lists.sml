@@ -29,12 +29,12 @@ fun sum_pair_list (xs : (int * int) list) =
 fun firsts ( xs: (int * int) list) =
   if null xs
   then []
-  else (#1 (hd xs)) :: firsts(tl xs)
+  else #1 (hd xs) :: firsts(tl xs)
 
 fun seconds ( xs: (int * int) list) =
   if null xs
   then []
-  else (#2 (hd xs)) :: seconds(tl xs)
+  else #2 (hd xs) :: seconds(tl xs)
 			      
 			     
 fun sum_pair_list2 (xs: (int * int) list) =
